@@ -1,0 +1,114 @@
+body {
+    background-color: rgb(244, 238, 238);
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right top, #715d68, #6e5c6c, #6a5b70, #635b73, #5b5c77, #535e79, #4b6079, #446278, #426574, #446770, #48686b, #4e6967);
+    padding: 5px;
+    
+}
+
+.title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.taskHeader {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 8px 10px 10px;
+    
+}
+
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background: #c2b185;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background: #d9958e;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: ' ';
+    position: absolute;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    background-image: url(https://static.thenounproject.com/png/620634-200.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 2px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(https://www.svgrepo.com/show/339968/checkbox-checked-filled.svg);
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+ul li span:hover{
+    background: gray;
+}
