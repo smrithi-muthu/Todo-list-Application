@@ -1,6 +1,9 @@
 const input = document.getElementById("task");
 const listContainer = document.getElementById("list-container");
 
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const colorButton = document.getElementById('btn');
+
 function Submit(){
     if(input.value === ''){
         alert("Empty Submission");
@@ -26,6 +29,22 @@ listContainer.addEventListener("click", function(e){
     }
 }, false);
 
+
+function color(){
+    let hexColor = "#"
+    
+    for(let i = 0; i < 6; i++){
+        hexColor += hex[getRandomNumber()];
+    }
+    
+    document.body.style.backgroundColor = hexColor;
+
+}
+
+function getRandomNumber() {
+    return Math.floor(Math.random() * hex.length);
+}
+
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
 }
@@ -33,4 +52,7 @@ function saveData(){
 function showTask(){
     listContainer.innerHTML = localStorage.getItem("data");
 }
+
 showTask();
+
+

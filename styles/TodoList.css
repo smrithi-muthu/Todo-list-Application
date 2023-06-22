@@ -29,7 +29,7 @@ body {
 .to-do-app{
     width: 100%;
     max-width: 540px;
-    background: #c2b185;
+    background: #decc9e;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -63,6 +63,14 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
+
+.color {
+    padding: 30px 20px;
+    align-items: center; 
+    position: relative;
+    transform: translateX(40%);
+}
+
 
 ul li {
     list-style: none;
