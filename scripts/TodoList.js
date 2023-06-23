@@ -1,6 +1,7 @@
 const input = document.getElementById("task");
 const listContainer = document.getElementById("list-container");
 let count = 0;
+let click = 0;
 const value = document.querySelector("#value");
 
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -17,7 +18,7 @@ function Submit(){
         span.innerHTML = "\u00d7"
         li.appendChild(span);
         count++;
-        counter();
+       // counter();
     }
     input.value = "";
     saveData();
@@ -27,12 +28,12 @@ listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
         count--;
-        counter();
+        //counter();
         saveData();
     } else if(e.target.tagName === "SPAN"){
         e.target.parentElement.remove();
         count--;
-        counter()
+        //counter()
         saveData();
     }
 }, false);
@@ -62,6 +63,7 @@ function getRandomNumber() {
 
 function saveData(){
     localStorage.setItem("data", listContainer.innerHTML);
+    counter();
 }
 
 function showTask(){
