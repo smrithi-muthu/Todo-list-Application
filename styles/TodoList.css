@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(244, 238, 238);
+    background-color: rgb(239, 158, 158);
     color: white;
     font-family: Arial;
 }
@@ -119,4 +119,11 @@ ul li span {
 
 ul li span:hover{
     background: gray;
+}
+
+.Counter {
+    text-align: center;
+    position: fixed;
+    left:40px; 
+    top:20px;
 }

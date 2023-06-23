@@ -8,21 +8,26 @@
     
         <div class="to-do-app">
             <p class = "title">TO-DO LIST</p>
-            <h1 class="taskHeader">TASK</h1>
+            
             <div class="row">
+                <div class="Counter">
+                    <h3 class="NumberOfTasks">TASKS</h3>
+                    <span id="value">0</span>
+                </div>
                 <input type="text" id="task" name="Task" placeHolder="Task">
                 <button onclick="Submit()">Submit</button>
             </div>
                 <ul id="list-container">
-                   <!-- <li class = "checked">Task 1</li>
-                    <li>Task 2</li>
-                    <li>Task 3</li> -->
                 </ul>
+
         </div>
 
         <div class="color">
             <button class="btn" onclick="color()">Change Background Color</button>
         </div>
+
+        
+       
 
     <p id="output"></p>
     <script src = "scripts/TodoList.js"></script> 
