@@ -4,14 +4,6 @@ body {
     font-family: Arial;
 }
 
-.container {
-    width: 100%;
-    min-height: 100vh;
-    background: linear-gradient(to right top, #715d68, #6e5c6c, #6a5b70, #635b73, #5b5c77, #535e79, #4b6079, #446278, #426574, #446770, #48686b, #4e6967);
-    padding: 5px;
-    
-}
-
 .title {
     color: black;
     font-size: 30px;
@@ -29,7 +21,7 @@ body {
 .to-do-app{
     width: 100%;
     max-width: 540px;
-    background: #decc9e;
+    background-color: #decc9e;
     margin: 100px auto 20px;
     padding: 40px 30px 70px;
     border-radius: 10px;
@@ -57,7 +49,7 @@ button{
     border: none;
     outline: none;
     padding: 10px 20px;
-    background: #d9958e;
+    background: #242424;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -87,7 +79,7 @@ ul li::before{
     height: 21px;
     width: 21px;
     border-radius: 50%;
-    background-image: url(https://static.thenounproject.com/png/620634-200.png);
+    background-image: url(https://www.svgrepo.com/show/309415/checkbox-unchecked.svg);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -126,4 +118,18 @@ ul li span:hover{
     position: fixed;
     left:40px; 
     top:20px;
+}
+
+.leftButton {
+    padding: 15px 20px;
+    align-items: center; 
+    position: relative;
+    transform: translateX(1000%);
+}
+
+.rightButton {
+    padding: 15px 15px;
+    align-items: center; 
+    position: relative;
+    transform: translateX(1000%);
 }
